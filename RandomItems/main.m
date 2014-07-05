@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "WCItem.h"
 
 int main(int argc, const char * argv[])
 {
@@ -27,6 +28,17 @@ int main(int argc, const char * argv[])
         [items insertObject:@"Zero" atIndex:0];
         items = nil;
         
+        WCItem * newItem = [[WCItem alloc]init];
+        
+        NSLog(@"%@, %@, %@, %d", newItem.itemName, newItem.serialNumber, newItem.dateCreated,newItem.valueInDollars);
+        
+        newItem.itemName = @"Red Rose";
+        newItem.serialNumber = @"010101";
+        newItem.valueInDollars = 12;
+        
+        NSLog(@"%@, %@, %@, %d", newItem.itemName, newItem.serialNumber, newItem.dateCreated,newItem.valueInDollars);
+        
+              
     }
     return 0;
 }
