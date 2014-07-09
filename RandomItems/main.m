@@ -8,38 +8,34 @@
 
 #import <Foundation/Foundation.h>
 #import "WCItem.h"
+#import "WCItemContainer.h"
 
 int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
         
-        // insert code here...
-        NSLog(@"Hello, World!");
-        NSMutableArray *items = [[NSMutableArray alloc] init];
-        [items addObject:@"One"];
-        [items addObject:@"Two"];
-        [items addObject:@"Three"];
+      
+        NSMutableArray * items = [[NSMutableArray alloc] init];
         
-        for (NSString *item in items) {
-            NSLog(@"%@", item);
-        }
         
-        [items insertObject:@"Zero" atIndex:0];
+        WCItem * backpack =[[WCItem alloc] initWithItemName:@"Backpack"];
+        [items addObject:backpack];
+        
+        WCItem * calculator = [[WCItem alloc] initWithItemName:@"Calculator"];
+        [items addObject:calculator];
+        
+        backpack.containedItem = calculator;
+        
+        NSLog(@"%@", items);
+        
         items = nil;
+        backpack = nil;
+        calculator = nil;
+        NSLog(@"AFTER nil %@", items);
         
-        WCItem * newItem = [[WCItem alloc]init];
-        
-        NSLog(@"%@, %@, %@, %d", newItem.itemName, newItem.serialNumber, newItem.dateCreated,newItem.valueInDollars);
-        
-        newItem.itemName = @"Red Rose";
-        newItem.serialNumber = @"010101";
-        newItem.valueInDollars = 12;
-        
-        NSLog(@"%@, %@, %@, %d", newItem.itemName, newItem.serialNumber, newItem.dateCreated,newItem.valueInDollars);
-        
-              
     }
+    
     return 0;
 }
 

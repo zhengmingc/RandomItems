@@ -11,6 +11,7 @@
 		F346F2391965D6820079F180 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F346F2381965D6820079F180 /* main.m */; };
 		F346F23D1965D6820079F180 /* RandomItems.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = F346F23C1965D6820079F180 /* RandomItems.1 */; };
 		F346F245196629D50079F180 /* WCItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F346F244196629D50079F180 /* WCItem.m */; };
+		F3D7D769196C591E00483EDD /* WCItemContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D7D768196C591E00483EDD /* WCItemContainer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		F346F23C1965D6820079F180 /* RandomItems.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = RandomItems.1; sourceTree = "<group>"; };
 		F346F243196629D50079F180 /* WCItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCItem.h; sourceTree = "<group>"; };
 		F346F244196629D50079F180 /* WCItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCItem.m; sourceTree = "<group>"; };
+		F3D7D767196C591E00483EDD /* WCItemContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCItemContainer.h; sourceTree = "<group>"; };
+		F3D7D768196C591E00483EDD /* WCItemContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCItemContainer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +54,8 @@
 		F346F2291965D6820079F180 = {
 			isa = PBXGroup;
 			children = (
+				F3D7D767196C591E00483EDD /* WCItemContainer.h */,
+				F3D7D768196C591E00483EDD /* WCItemContainer.m */,
 				F346F243196629D50079F180 /* WCItem.h */,
 				F346F244196629D50079F180 /* WCItem.m */,
 				F346F2371965D6820079F180 /* RandomItems */,
@@ -146,6 +151,7 @@
 			files = (
 				F346F245196629D50079F180 /* WCItem.m in Sources */,
 				F346F2391965D6820079F180 /* main.m in Sources */,
+				F3D7D769196C591E00483EDD /* WCItemContainer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +265,7 @@
 				F346F2421965D6820079F180 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
